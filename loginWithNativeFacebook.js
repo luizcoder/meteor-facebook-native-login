@@ -1,5 +1,4 @@
 import { _ } from "underscore"
-import  facebookConnectPlugin from "./facebookConnectPlugin"
 /*
 * Log the user using the native facebook sdk, if not under Cordova, it will called Meteor.loginWithFacebook
 * */
