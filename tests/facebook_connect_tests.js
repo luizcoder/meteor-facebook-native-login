@@ -1,5 +1,4 @@
 import { describe, it } from "meteor/practicalmeteor:mocha"
-import { facebookConnectPlugin} from "../facebookConnectPlugin"
 import { expect } from "chai"
 
 
@@ -12,5 +11,5 @@ describe("facebookConnectPlugin", ()=>{
       }).to.throw(/Can't call 'facebookConnectPlugin/);
     });
   });
-  
+
 });
