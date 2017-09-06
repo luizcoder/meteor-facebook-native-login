@@ -1,6 +1,7 @@
 import { Meteor } from "meteor/meteor"
 import loginWithNativeFacebook from "./loginWithNativeFacebook"
 
-Meteor.loginWithNativeFacebook = loginWithNativeFacebook;
+var NativeLogin = {};
+NativeLogin.loginWithNativeFacebook = loginWithNativeFacebook;
 
 export {facebookConnectPlugin};

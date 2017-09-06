@@ -76,4 +76,3 @@ Accounts.registerLoginHandler((options)=>{
 });
 export { NativeFacebookLoginHandler }
 export { loginHandler }
-
