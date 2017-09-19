@@ -1,6 +1,6 @@
 Package.describe({
   name: 'luizcoder:facebook-native-login',
-  version: '0.1.5',
+  version: '0.1.7',
   // Brief, one-line summary of the package.
   summary: 'Use native api to login with Facebook',
   // URL to the Git repository containing the source code for this package.
@@ -23,14 +23,15 @@ Cordova.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.3');
+  api.versionsFrom('1.5');
   api.use('ecmascript');
   api.use("accounts-base");
   api.use("accounts-facebook");
   api.use("http");
   api.imply("accounts-facebook");
   api.addFiles("NativeFacebookLoginHandler.js", 'server');
-  api.mainModule("index.js")
+  api.mainModule("index.js");
+  api.export('NativeLogin');
 });
 
 
